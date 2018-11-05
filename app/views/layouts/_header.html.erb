@@ -2,7 +2,7 @@
   <div class="container">
     <nav>
       <ul class="nav navbar-nav navbar-left">
-        <li><%= link_to "Accueil", root_path, class: 'navbar-brand' %></li>
+        <li><%= link_to "Accueil", root_path, class="navbar navbar-dark bg-primary" %></li>
         <% if logged_in? %>
           <li><%= link_to "suprise", users_path, class: 'navtext' %></li>
           <li class="dropdown">
@@ -17,7 +17,7 @@
             </ul>
           </li>
         <% else %>
-          <li><%= link_to "S'inscrire", new_user_path, class: 'navtext' %></li>
+          <li><%= link_to "S'inscrire", new_user_path, class="navbar navbar-dark bg-primary" %></li>
           <li><%= link_to "Se connecter", login_path %></li>
         <% end %>
       </ul>
