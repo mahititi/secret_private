@@ -1,0 +1,18 @@
+<div class="row container-fluid">
+<div class=col-md-3>
+</div>
+<div class="col-md-6">
+<% if logged_in? %>
+  <h1>Coucou !</h1>
+  <p class="welcome">Tu es membre de notre club ultra select, fais-lui honneur 🤘🤘🤘 </p>
+  <p class="welcome"><%= link_to "Clique ici pour accéder à la page privée", index_path %></p>
+
+<% else %>
+  <h1>Salut salut !</h1>
+  <p class="welcome">Bienvenue dans notre club ultra select 🙈 🙉 🙊</p>
+  <p class="welcome"><%= link_to "Connecte-toi ici", login_path %> ou <%= link_to "Inscris-toi ici", new_user_path %> pour accéder à la page privée</p>
+<% end %>
+</div>
+<div class=col-md-3>
+</div>
+</div>
